@@ -1,5 +1,7 @@
 # Synthesized Queries for Intent and Sentiment Classification
 
+### PLEASE VERIFY THE QUERIES IN THIS SHEET - [🔗 SYNTHESIZED QUERIES FOR MANUAL VERIFICATION](https://docs.google.com/spreadsheets/d/1nQx-kuhMfhFfr40RDW358Fqr9ouZAqXFXHBkP7CdA8E/edit?usp=sharing)
+
 Queries have been programmatically synthesized using Phi-2 for the purpose of generating a labeled dataset suitable for training and evaluating models on intent and sentiment classification tasks.
 
 ## **Key Components**
