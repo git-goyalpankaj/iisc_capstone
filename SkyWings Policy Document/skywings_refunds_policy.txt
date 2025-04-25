@@ -11,7 +11,7 @@ Book
  
  Book domestic flights with fares starting at ₹1,499
  
- Book your stay on goIndiGo.in and get up to 25%* off.
+ Book your stay on goSkyWings.in and get up to 25%* off.
  
  Trips
  
@@ -203,7 +203,7 @@ Credit Shell
 IATA Travel Pass
 Fees and Charges
 Hotels
-IndiGoStretch
+SkyWingsStretch
 Refunds
 Can a refund be obtained on an Itinerary cancellation?
 Yes,a refund on an itinerary cancellation can be obtained. You can cancel the ticket online and get refunded after the applicable cancellation charges are incurred. Changes or cancellations to booking must be made at least
@@ -214,7 +214,7 @@ How can a refund for a cancelled ticket be obtained?
 Refund for cancelled tickets will be processed after the deduction of appropriate cancellation fees, which may take up to 7 working days.
 How can a refund for a reservation paid in cash be obtained?
 A refund in cash can be processed at the domestic airport counters; but if the payment for the reservation is made at our International airport counter; than passengers will have to write to us at 
-customer.experience@GOINDIGO.IN
+customer.experience@GOSkyWings.IN
  for assistance.
 How can I obtain a refund for a ticket booked through a travel agency?
 The refund for the amount will be made to the travel agency's account on cancellation of the booking. Passengers will have to contact the concerned agency directly to claim their refund. 
@@ -249,7 +249,7 @@ COMPANY
  
  SW Embrace - Diversity Equity & Inclusion
  
- IndiGoReach - Our CSR initiatives
+ SkyWingsReach - Our CSR initiatives
  
  Board of Directors
  

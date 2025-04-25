@@ -11,7 +11,7 @@ Book
  
  Book domestic flights with fares starting at ₹1,499
  
- Book your stay on goIndiGo.in and get up to 25%* off.
+ Book your stay on goSkyWings.in and get up to 25%* off.
  
  Trips
  
@@ -203,7 +203,7 @@ Credit Shell
 IATA Travel Pass
 Fees and Charges
 Hotels
-IndiGoStretch
+SkyWingsStretch
 Fees and 
 Charges
 Fees and Charges
@@ -4551,7 +4551,7 @@ USD 250 (Two-Fifty Dollars only)
 USD 80 (Eighty Dollars only)
 **SkyWings does not permit any single (1) piece of Checked-in Baggage weighing more than 32 kg. To carry any such Baggage, Additional Piece Charges along with Overweight Charges will be levied on the Checked-in Baggage. 
  
-IndiGoStretch
+SkyWingsStretch
 I. Check-in Baggage Allowance:
 Baggage Allowance
 Stretch
@@ -4611,7 +4611,7 @@ COMPANY
  
  SW Embrace - Diversity Equity & Inclusion
  
- IndiGoReach - Our CSR initiatives
+ SkyWingsReach - Our CSR initiatives
  
  Board of Directors
  

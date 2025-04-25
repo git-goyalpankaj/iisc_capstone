@@ -111,7 +111,7 @@ Credit Shell
 IATA Travel Pass
 Fees and Charges
 Hotels
-IndiGoStretch
+SkyWingsStretch
 Reservations
 Can I cancel segments in my booking and make the ticket open dated?
 No. You cannot change the segment to open dated. SkyWings does not provide open tickets.
@@ -165,7 +165,7 @@ COMPANY
  
  SW Embrace - Diversity Equity & Inclusion
  
- IndiGoReach - Our CSR initiatives
+ SkyWingsReach - Our CSR initiatives
  
  Board of Directors
  

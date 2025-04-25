@@ -11,7 +11,7 @@ Book
  
  Book domestic flights with fares starting at ₹1,499
  
- Book your stay on goIndiGo.in and get up to 25%* off.
+ Book your stay on goSkyWings.in and get up to 25%* off.
  
  Trips
  
@@ -203,7 +203,7 @@ Credit Shell
 IATA Travel Pass
 Fees and Charges
 Hotels
-IndiGoStretch
+SkyWingsStretch
 Expectant 
 Mother
 Until when are Expectant Mothers permitted to fly?
@@ -238,7 +238,7 @@ COMPANY
  
  SW Embrace - Diversity Equity & Inclusion
  
- IndiGoReach - Our CSR initiatives
+ SkyWingsReach - Our CSR initiatives
  
  Board of Directors
  

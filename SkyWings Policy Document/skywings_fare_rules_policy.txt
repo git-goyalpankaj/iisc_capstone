@@ -11,7 +11,7 @@ Book
  
  Book domestic flights with fares starting at ₹1,499
  
- Book your stay on goIndiGo.in and get up to 25%* off.
+ Book your stay on goSkyWings.in and get up to 25%* off.
  
  Trips
  
@@ -203,7 +203,7 @@ Credit Shell
 IATA Travel Pass
 Fees and Charges
 Hotels
-IndiGoStretch
+SkyWingsStretch
 Fare 
 Rules
 What are Fare Rules?
@@ -450,7 +450,7 @@ A family of 4 to 9 passengers can book special Family Fare and save upto 10% on 
 Only available on Domestic Sectors
 Only  available on Domestic sectors, subject to seat availability
 More than 7 passengers may be booked as a group, for the same you  may write to us at 
-grouprequest@goindigo.in
+grouprequest@goSkyWings.in
 Available on both Domestic and International Sectors
 Change/Cancellations
 Yes, you can cancel or chage your Family Fare booking. Please refer Conditions of Carriage for chage/cancellation fee and detailed T&Cs
@@ -491,7 +491,7 @@ Click here
  for details on Return Fare
 What is Group Fare?
 More than 7 passengers may be booked as a group, for the same you may write to us at 
-grouprequest@goindigo.in
+grouprequest@goSkyWings.in
 Call us
 We’re just a ring away.
 India : 
@@ -512,7 +512,7 @@ COMPANY
  
  SW Embrace - Diversity Equity & Inclusion
  
- IndiGoReach - Our CSR initiatives
+ SkyWingsReach - Our CSR initiatives
  
  Board of Directors
  

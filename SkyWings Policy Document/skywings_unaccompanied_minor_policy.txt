@@ -11,7 +11,7 @@ Book
  
  Book domestic flights with fares starting at ₹1,499
  
- Book your stay on goIndiGo.in and get up to 25%* off.
+ Book your stay on goSkyWings.in and get up to 25%* off.
  
  Trips
  
@@ -203,7 +203,7 @@ Credit Shell
 IATA Travel Pass
 Fees and Charges
 Hotels
-IndiGoStretch
+SkyWingsStretch
 Unaccompanied Minor 
 Travel
 Who is considered an Unaccompanied Minor/Child?
@@ -255,7 +255,7 @@ If 2 children are traveling one aged between 5-12 years and another aged between
 By what time unaccompanied minor service can be added?
 Unaccompanied minor can be booked 4 hours before flight departure on domestic flight and 6 hours on international flights
 For additional information - 
-https://www.goindigo.in/information/special-and-disability-assistance.html
+https://www.goSkyWings.in/information/special-and-disability-assistance.html
 Call us
 We’re just a ring away.
 India : 
@@ -276,7 +276,7 @@ COMPANY
  
  SW Embrace - Diversity Equity & Inclusion
  
- IndiGoReach - Our CSR initiatives
+ SkyWingsReach - Our CSR initiatives
  
  Board of Directors
  

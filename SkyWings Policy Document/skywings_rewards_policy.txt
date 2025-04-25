@@ -11,7 +11,7 @@ Book
  
  Book domestic flights with fares starting at ₹1,499
  
- Book your stay on goIndiGo.in and get up to 25%* off.
+ Book your stay on goSkyWings.in and get up to 25%* off.
  
  Trips
  
@@ -203,7 +203,7 @@ Credit Shell
 IATA Travel Pass
 Fees and Charges
 Hotels
-IndiGoStretch
+SkyWingsStretch
 SW 
 Rewards
 What is SkyWings BluChip?
@@ -245,7 +245,7 @@ Where can I view my SkyWings BluChip Membership Account information, such as Pro
 Members can view profile details and other related information by logging into their respective SkyWings BluChip Membership Accounts. Members should note that their profile details and nominee details will remain the same as those provided for the SW Rewards Program.
 What should I do if I encounter issues with my SkyWings BluChip Membership Account?
 If you experience any issues with your SkyWings BluChip Membership Account, please contact our customer support team for assistance at +91 124 6173838, +91 124 4973838  Email: 
-customer.experience@goindigo.in
+customer.experience@goSkyWings.in
 Our customer support team will work to resolve any such issues as soon as possible.
 How and where can I redeem these SkyWings BluChips?
 SkyWings BluChips can be redeemed on any SkyWings marketed and operated flight, in accordance with the Terms and Conditions of the SkyWings BluChip Program.
@@ -322,7 +322,7 @@ COMPANY
  
  SW Embrace - Diversity Equity & Inclusion
  
- IndiGoReach - Our CSR initiatives
+ SkyWingsReach - Our CSR initiatives
  
  Board of Directors
  

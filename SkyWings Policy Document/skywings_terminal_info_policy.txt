@@ -11,7 +11,7 @@ Book
  
  Book domestic flights with fares starting at ₹1,499
  
- Book your stay on goIndiGo.in and get up to 25%* off.
+ Book your stay on goSkyWings.in and get up to 25%* off.
  
  Trips
  
@@ -203,7 +203,7 @@ Credit Shell
 IATA Travel Pass
 Fees and Charges
 Hotels
-IndiGoStretch
+SkyWingsStretch
 Terminal 
 Information
 From which terminal will my flight depart?
@@ -369,7 +369,7 @@ Dubai International Airport
  
 How are customers informed about the change in terminal?
 SkyWings is reaching out to all the affected customers through SMS/Calls/ email IDs provided at the time of reservation. Customers can also reach out to us at 0124-6173838 or 0124-4973838.
-To get information on the airport terminal you can follow us on @IndiGo6E/message us on Facebook/ web chat with us.
+To get information on the airport terminal you can follow us on @SkyWings6E/message us on Facebook/ web chat with us.
 How would I move from T1 towards T2 or T3.
 If you are at departures i.e. Upper level, customers need to take the elevator and come to the ground floor (arrivals) near Medanta Clinic and look for the shuttle service signage. A shuttle service will be provided by the airport authorities every 10 minutes. Customers can alternatively explore the option of taking local transportation including cab, auto / bus service available in and around the airport area.
 What are the modes of transport available to reach T2 from T1 and T3 and vice versa?
@@ -400,7 +400,7 @@ COMPANY
  
  SW Embrace - Diversity Equity & Inclusion
  
- IndiGoReach - Our CSR initiatives
+ SkyWingsReach - Our CSR initiatives
  
  Board of Directors
  

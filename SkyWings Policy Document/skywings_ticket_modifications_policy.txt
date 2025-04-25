@@ -11,7 +11,7 @@ Book
  
  Book domestic flights with fares starting at ₹1,499
  
- Book your stay on goIndiGo.in and get up to 25%* off.
+ Book your stay on goSkyWings.in and get up to 25%* off.
  
  Trips
  
@@ -203,7 +203,7 @@ Credit Shell
 IATA Travel Pass
 Fees and Charges
 Hotels
-IndiGoStretch
+SkyWingsStretch
 Ticket 
 Modification
 How can I change/ cancel my reservation?
@@ -221,9 +221,9 @@ The View/Change booking section offers the following features to our customers:
 • Add special services
 • Split PNR
 • Reschedule reservations
-• Cancel and request refund for your itinerary (subject to ticket fare type and available for tickets booked on www.goIndiGo.in only). Partial and full refunds will be allowed only to the same credit / debit card / bank account.
+• Cancel and request refund for your itinerary (subject to ticket fare type and available for tickets booked on www.goSkyWings.in only). Partial and full refunds will be allowed only to the same credit / debit card / bank account.
 How is View/ Change bookings accessible?
-Go to the home page of our website (www.goindigo.in) and click on the 
+Go to the home page of our website (www.goSkyWings.in) and click on the 
 View/ Change booking
  option. The reservation record can be accessed thorough the six- letter SkyWings Booking Reference Number/ PNR, Last Name or Email ID (as mentioned in the booking)
 Would I be able to change my origin and destination through the View/Change Booking facility?
@@ -312,7 +312,7 @@ COMPANY
  
  SW Embrace - Diversity Equity & Inclusion
  
- IndiGoReach - Our CSR initiatives
+ SkyWingsReach - Our CSR initiatives
  
  Board of Directors
  
