@@ -1,5 +1,6 @@
 import os
 import time
+import pandas
 import streamlit as st
 from pathlib import Path
 from transformers import pipeline
@@ -13,6 +14,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from langchain.schema import Document
 from langchain.schema import(AIMessage,HumanMessage,SystemMessage)
+from langchain_community.embeddings import HuggingFaceInferenceAPIEmbeddings
 
 
 hf_token = st.secrets["auth_key"]
@@ -24,9 +26,8 @@ st.title("📄 Chat with Documents - Local LLM + FAISS")
 st.sidebar.header("Configuration")
 
 # Model selection
-model_name = st.sidebar.selectbox("Select a model", [
-     "HuggingFaceH4/zephyr-7b-beta"
-])
+model_name = "HuggingFaceH4/zephyr-7b-beta"
+
 
 # FAISS folder path
 # faiss_folder = st.sidebar.text_input("FAISS Index Folder Path", value="./data")
@@ -152,7 +153,10 @@ for filename in os.listdir(data_folder):
             documents.append(Document(page_content=content, metadata={"source": filename}))  # <- wrap it in Document
 
 # Then pass this 'documents' list
-embed_model_1 = HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
+embed_model_1 = HuggingFaceInferenceAPIEmbeddings(
+    api_key=hf_token,
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
 h_vectordb = FAISS.from_documents(documents, embed_model_1)
 retriever = h_vectordb.as_retriever(score_threshold = 0.7)
 
@@ -176,7 +180,7 @@ chain_type_kwargs = {"prompt": prompt}
 
 # retriever = db.as_retriever()
 memory = ConversationSummaryBufferMemory(llm=llm, memory_key="chat_history", return_messages=False)
-qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever,
+qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=h_vectordb.as_retriever(search_type="mmr",search_kwargs={"k": 2, "fetch_k":6} ),
                                                  chain_type="stuff",input_key="query",return_source_documents=True,chain_type_kwargs=chain_type_kwargs)
 
 
@@ -193,9 +197,17 @@ chat_history = []
 # ----------------------------
 # NLP Pipelines
 # ----------------------------
-sentiment_pipe = pipeline("sentiment-analysis", model="cardiffnlp/twitter-roberta-base-sentiment-latest")
+sentiment_pipe = pipeline(
+    "sentiment-analysis",
+    model="cardiffnlp/twitter-roberta-base-sentiment-latest",
+    device=-1 # Force CPU # Use Hugging Face token if needed
+)
 
-intent_pipe = pipeline("zero-shot-classification")
+intent_pipe = pipeline(
+    "zero-shot-classification",
+    model="facebook/bart-large-mnli",   # very strong zero-shot model
+    device=-1,                          # forces CPU / API
+)
 intent_labels = [
     'Billing issues', 'Loyalty Program & Miles', 'Flight booking',
     'Child and Infant Travel', 'Meal and Dietary Preferences',
