@@ -4,13 +4,13 @@
 
 The following files have been uploaded for the intent classification task using a fine-tuned BERT model:
 
-- **`Best_Bert_Model.zip`**  
+- **`Best_Bert_Model.zip`- [Link](https://drive.google.com/file/d/1iZtbG3COTwfGvYCemXSI9kET6kVItXu1/view?usp=sharing)**  
   This file contains the final trained BERT model along with its tokenizer. The model was fine-tuned on text data to perform intent classification based on BERT embeddings.
 
-- **`label_encoder.pkl`**  
+- **`label_encoder.pkl` - [Link](https://drive.google.com/file/d/1m_d6GL5bfgzqfSCrN7rZdrjGw42nNR2y/view?usp=sharing)**  
   This file contains the `LabelEncoder` object that was fitted during the training phase. It is used to map model prediction indices back to the original intent label names.
 
-- **Usage Script**  
+- **Usage Script - [Link](https://colab.research.google.com/drive/1jMfj5IExddIxh5kefabpLghMn5SQxt42?usp=sharing)**  
   A script has also been provided that loads the BERT model, tokenizer, and label encoder, and allows you to make predictions on new input queries.
 
 ## Purpose
