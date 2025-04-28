@@ -1,0 +1,10 @@
+flask
+requests
+twilio
+langchain
+langchain-community
+faiss-cpu
+sentence-transformers
+pymupdf
+pypdf
+
