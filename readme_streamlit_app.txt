@@ -1,4 +1,4 @@
-# iisc_capstone Project Repository
+# Go to "Dummy Setup chat LLM bot"  repo under GitHub Project Repository
 
 This repository contains the implementation of a multi-dialog chatbot integrated with FAISS-based RAG (Retrieval-Augmented Generation), custom intent BERT model for intent detection and local LLM (Mistral) for llm response.
 
