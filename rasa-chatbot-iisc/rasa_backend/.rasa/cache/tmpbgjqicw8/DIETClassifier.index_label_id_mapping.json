@@ -1,0 +1,9 @@
+{
+  "0": "accept_cash_miles_offer",
+  "1": "cash_miles_upgrade_request",
+  "2": "positive_confirmation",
+  "3": "provide_pnr",
+  "4": "seat_selection_request",
+  "5": "upgrade_options_request",
+  "6": "upgrade_request"
+}

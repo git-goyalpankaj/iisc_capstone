@@ -1,0 +1,56 @@
+version: "3.1"
+
+nlu:
+
+- intent: provide_pnr
+  examples: |
+    - My PNR is ABC123 and customer ID is 789654
+    - Here is my booking: ABC123, ID 789654
+
+- intent: upgrade_request
+  examples: |
+    - I have a flight from Delhi to Bangalore tomorrow, can I upgrade to business class?
+    - I'd like to upgrade to business class using my frequent flyer miles.
+    - Can I upgrade to business class using my miles?
+    - Can I use points to upgrade to premium economy?
+    - I want to upgrade to business using miles I earned
+    - Can I move from economy to business using points?
+    - Is a business class upgrade possible for my ticket?
+    - Hi, I have a booking and I want to use my miles to upgrade to business
+    - I have a flight booked. Can you check if I’m eligible for upgrade using miles?
+    - How many miles do I need to upgrade to business for my Delhi to Bangalore flight?
+
+
+
+- intent: cash_miles_upgrade_request
+  examples: |
+    - Is there a cash plus miles option?
+    - Can I pay cash and use miles together for an upgrade?
+    - I don't have enough miles, can I pay cash?
+
+
+- intent: positive_confirmation
+  examples: |
+    - Yes, please go ahead
+    - That sounds good
+    - Sure, proceed with the upgrade
+    - Confirm it
+    - I would like that
+
+- intent: accept_cash_miles_offer
+  examples: |
+    - Yes, let's go ahead with the upgrade
+    - I agree to use cash and miles
+    - Please proceed with that
+
+- intent: seat_selection_request
+  examples: |
+    - Can I get a window seat?
+    - I'd like an aisle seat please
+    - Do you have window seats left?
+
+- intent: upgrade_options_request
+  examples: |
+    - What other upgrade options do I have?
+    - Can I try a different class?
+    - Show me alternative upgrade choices

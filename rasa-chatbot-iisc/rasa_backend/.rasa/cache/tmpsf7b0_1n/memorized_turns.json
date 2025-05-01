@@ -1,0 +1,17 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODWxJL44NScVoqwotbA0tbiktjYWAPu8Iqg=": "utter_ask_seat_preference",
+    "eJyNjcEJgDAQBFtJAVaQVkSOEFYIxlPvLn5Cejeof/3twOzuWNvg6i44KURLG3tXn0AcVnj3Qk5q4O4WhXQncUfzThGMFBmPJjgK1NrHaDGDUNCF7n43Zwg44v/BdAE9TkiP": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhtCC9KDElNT6/AKSsOL4otbA0tbiktjYWACBMIyk=": "utter_offer_alternative",
+    "eJyVjEEKwzAMBL/iB/QF/koIQrSbYnBkV5ZzMf57FJp76WWZgWGXMR9hVMVB/LRUJIbxBRLeEcMtOTWDeNsb1JskrhZDr2/lF6jUK2uk+HQ0mz9euxmUyrb5cnYWtnTgj//1BE4ESNg=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhoCi/LDMlNb4gr6i2NhYAmBUeFg==": "flight_upgrade_form",
+    "eJyFjEsKwCAMBa/iAXoCr1KKSBttQGOIn4149wbafXdvYN7sc21mssBw/mxYyJr5Dkc+gzUfJKwNSN1eQdRBUmzWsJSBFzgmWT+lkDDezXWO4vURiuSf3vEAzLU85w==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhtCC9KDElNb4otbA0tbiktjYWABOHH74=": "flight_upgrade_form",
+    "eJyFjVEKgCAQRK/iATqBV4lYpDYTTG1d/ZHu3kb1F/U3A+/N9G3vVEuEFczILgat2hUgmBW1uot3mTEIWzKSMC5IZa1KsmQmBMKtYOb9XDuViuBjTEJeM7N3dmF48DnSKujH77vw9z4ckGZQPQ==": "action_listen",
+    "eJwtysEJgDAMQNFVOoATdBWREGrQQBtrknop3d2C3v6Dv/axhF6VHsDkfEkM/QsQLBTDj8zmJPNtRjoflkmPIaGdUDiTQauH4k6gdDcyH2N7AYefJDU=": "utter_offer_cash_miles",
+    "eJyVjVEKgCAQRK/iATqBV4lYxMYS0mp37Ue6e0JBn9HPMAOPN309O1M3xkHOa1yzNfUulF2CNc9YoihyY4uAGxNzm2qNdzJTiguEyjaxG0GMvUD0/BAXVTCtIbR8Lf8ehgujXEpp": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhIL84sySzLDU+OT8vLbMoNxGkurY2FgDbRyJJ": "utter_confirm_upgrade",
+    "eJyNjFEKgCAQBa+yB+gEXiVCxLZYyFXW1R/x7hnVd/29gXkztz5BS4LVOq8U2UC7h2UX0MADB2VFHm7JKMMhHqgGUsykVNH6yBtJcJfdP5pFFeV92JJ2cSv+bi8nljRGPQ==": "action_listen"
+  }
+}

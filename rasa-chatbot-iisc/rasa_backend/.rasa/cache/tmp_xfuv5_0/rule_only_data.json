@@ -1,0 +1,6 @@
+{
+  "rule_only_slots": [
+    "upgrade_available"
+  ],
+  "rule_only_loops": []
+}

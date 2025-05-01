@@ -1,0 +1,62 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "Baggage": 0,
+        "Booking, Modifications And Cancellations": 1,
+        "Check-In And Boarding": 2,
+        "Customer Support": 3,
+        "Fares And Payments": 4,
+        "Flight Operations": 5,
+        "Irrelevant": 6,
+        "Loyalty And Rewards": 7,
+        "Other": 8,
+        "Passenger Services": 9,
+        "Refunds": 10,
+        "Travel Documents": 11,
+        "affirm": 12,
+        "back": 13,
+        "deny": 14,
+        "nlu_fallback": 15,
+        "out_of_scope": 16,
+        "restart": 17,
+        "session_start": 18
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_check_alternative_flight": 13,
+        "action_credit_miles": 14,
+        "utter_apologize_flight_change": 15,
+        "utter_apologize_inflight_experience": 16,
+        "utter_booking_confirmed": 17,
+        "utter_booking_modifications_action": 18,
+        "utter_booking_modifications_query": 19,
+        "utter_confirm_miles_credit": 20,
+        "utter_default": 21,
+        "utter_greet": 22,
+        "utter_offer_alternative_flight": 23,
+        "utter_offer_compensation_miles": 24
+      },
+      "entities": {},
+      "slots": {},
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

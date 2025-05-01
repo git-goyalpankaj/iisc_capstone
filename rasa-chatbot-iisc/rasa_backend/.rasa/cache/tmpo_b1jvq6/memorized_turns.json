@@ -1,0 +1,20 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODWxJL44NScVoqwotbA0tbiktjYWAPu8Iqg=": "utter_ask_seat_preference",
+    "eJyNjcEJgDAQBFtJAVaQVkSOEFYIxlPvLn5Cejeof/3twOzuWNvg6i44KURLG3tXn0AcVnj3Qk5q4O4WhXQncUfzThGMFBmPJjgK1NrHaDGDUNCF7n43Zwg44v/BdAE9TkiP": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhtCC9KDElNT6/AKSsOL4otbA0tbiktjYWACBMIyk=": "utter_offer_alternative",
+    "eJyVjEEKwzAMBL/iB/QF/koIQrSbYnBkV5ZzMf57FJp76WWZgWGXMR9hVMVB/LRUJIbxBRLeEcMtOTWDeNsb1JskrhZDr2/lF6jUK2uk+HQ0mz9euxmUyrb5cnYWtnTgj//1BE4ESNg=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhoCi/LDMlNb4gr6i2NhYAmBUeFg==": "flight_upgrade_form",
+    "eJyFjEsKwCAMBa/iAXoCr1KKSBttQGOIn4149wbafXdvYN7sc21mssBw/mxYyJr5Dkc+gzUfJKwNSN1eQdRBUmzWsJSBFzgmWT+lkDDezXWO4vURiuSf3vEAzLU85w==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhtCC9KDElNb4otbA0tbiktjYWABOHH74=": "flight_upgrade_form",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhtCC9KDElNb4otbA0tbikloBpaTmZ6Rkl8TBdaflFuUSYGQsAyf1ANw==": "action_fetch_booking_details",
+    "eJyljEEOwjAMBL+SB/CCfAUhK7Sb1CJ1iuNwifp3IrWcQeK2I83Ote8X1zfFi8JkXMS7fgySsMK7EzJXgwy3VehwWAaad21LGmaQ4tlQbf9Si5nTYvR5xaLr380TImxa6F7KgyXRDAuc6w/x2xukPmRM": "action_listen",
+    "eJytj0sKAjEQRK+SA3iCuYpI02Y6SWN+djpuQu5uwHEpLnRXD6oe1HnMkxlV6AFolUvezHgFyJhoMwdEbkp5dXsjWR3OC3UzvXrBnUDo3qnp/GJzkX1QeK9ckfSz8wBHagNcS7lx9rCTIsf2L/mn+2gtVQWLLUDiSA2KcyRzXp7cboVh": "action_confirm_upgrade",
+    "eJytkFsKAjEMRbfSBbiCbkUk1E7aBvsyTf0ps3cLM/MpKvp3D9wcyD2P9aRGZXyAsUIlazW2ANkk1GqHSE0wz25vyLNDeaJo1atnsyAw3js2Wd/YXCQfBI4rVzj97NzBodgA11JulD0sKIZi+5f81fvGWqwC1rQAiSI2KM4hf2i1JTvidMzxhf7yBCajqhw=": "action_listen",
+    "eJwtysEJgDAMQNFVOoATdBWREGrQQBtrknop3d2C3v6Dv/axhF6VHsDkfEkM/QsQLBTDj8zmJPNtRjoflkmPIaGdUDiTQauH4k6gdDcyH2N7AYefJDU=": "utter_offer_cash_miles",
+    "eJyVjVEKgCAQRK/iATqBV4lYxMYS0mp37Ue6e0JBn9HPMAOPN309O1M3xkHOa1yzNfUulF2CNc9YoihyY4uAGxNzm2qNdzJTiguEyjaxG0GMvUD0/BAXVTCtIbR8Lf8ehgujXEpp": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhIL84sySzLDU+OT8vLbMoNxGkurY2FgDbRyJJ": "utter_confirm_upgrade",
+    "eJyNjFEKgCAQBa+yB+gEXiVCxLZYyFXW1R/x7hnVd/29gXkztz5BS4LVOq8U2UC7h2UX0MADB2VFHm7JKMMhHqgGUsykVNH6yBtJcJfdP5pFFeV92JJ2cSv+bi8nljRGPQ==": "action_listen"
+  }
+}

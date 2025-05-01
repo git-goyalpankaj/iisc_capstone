@@ -1,0 +1,35 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"flight_upgrade_form\"}}]": "action_fetch_booking_details",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"flight_upgrade_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_fetch_booking_details\"}}]": "action_offer_cash_miles",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"flight_upgrade_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_fetch_booking_details\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_offer_cash_miles\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"accept_cash_miles_offer\"}}]": "action_confirm_upgrade",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"accept_cash_miles_offer\"}}, {\"prev_action\": {\"action_name\": \"action_confirm_upgrade\"}, \"user\": {\"intent\": \"accept_cash_miles_offer\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"upgrade_request\"}}]": "flight_upgrade_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"upgrade_request\"}}, {\"active_loop\": {\"name\": \"flight_upgrade_form\"}, \"prev_action\": {\"action_name\": \"flight_upgrade_form\"}, \"user\": {\"intent\": \"upgrade_request\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"upgrade_available\": [1.0, 1.0]}, \"user\": {\"intent\": \"positive_confirmation\"}}]": "action_confirm_upgrade",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"upgrade_available\": [1.0, 1.0]}, \"user\": {\"intent\": \"positive_confirmation\"}}, {\"prev_action\": {\"action_name\": \"action_confirm_upgrade\"}, \"slots\": {\"upgrade_available\": [1.0, 1.0]}, \"user\": {\"intent\": \"positive_confirmation\"}}]": "action_listen"
+    },
+    "rule_only_slots": [
+      "upgrade_available"
+    ],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"flight_upgrade_form\"}, \"prev_action\": {\"action_name\": \"flight_upgrade_form\"}, \"user\": {\"intent\": \"upgrade_request\"}}]": "do_not_predict_loop_action"
+    },
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"upgrade_available\": [1.0, 1.0]}, \"user\": {\"intent\": \"positive_confirmation\"}}]",
+      "handling active loops and forms - flight_upgrade_form",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"accept_cash_miles_offer\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"flight_upgrade_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_fetch_booking_details\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_offer_cash_miles\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"upgrade_available\": [1.0, 1.0]}, \"user\": {\"intent\": \"positive_confirmation\"}}, {\"prev_action\": {\"action_name\": \"action_confirm_upgrade\"}, \"slots\": {\"upgrade_available\": [1.0, 1.0]}, \"user\": {\"intent\": \"positive_confirmation\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"flight_upgrade_form\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"accept_cash_miles_offer\"}}, {\"prev_action\": {\"action_name\": \"action_confirm_upgrade\"}, \"user\": {\"intent\": \"accept_cash_miles_offer\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"flight_upgrade_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_fetch_booking_details\"}}]"
+    ]
+  }
+}

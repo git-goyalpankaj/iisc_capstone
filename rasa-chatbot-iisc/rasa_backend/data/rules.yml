@@ -1,0 +1,32 @@
+version: "3.1"
+
+rules:
+- rule: Trigger upgrade intent
+  steps:
+  - intent: upgrade_request
+  - action: flight_upgrade_form
+  - active_loop: flight_upgrade_form
+
+- rule: Submit upgrade form
+  condition:
+  - active_loop: flight_upgrade_form
+  steps:
+  - action: flight_upgrade_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_fetch_booking_details
+  - action: action_offer_cash_miles
+
+- rule: Accept cash+mile upgrade
+  steps:
+  - intent: accept_cash_miles_offer
+  - action: action_confirm_upgrade
+
+- rule: Handle positive confirmation after offer
+  condition:
+    - slot_was_set:
+        - upgrade_available: true
+  steps:
+    - intent: positive_confirmation
+    - action: action_confirm_upgrade

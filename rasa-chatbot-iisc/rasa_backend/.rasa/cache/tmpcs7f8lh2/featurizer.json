@@ -1,0 +1,64 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "back": 0,
+        "cash_miles_upgrade_request": 1,
+        "nlu_fallback": 2,
+        "out_of_scope": 3,
+        "positive_confirmation": 4,
+        "restart": 5,
+        "seat_selection_request": 6,
+        "session_start": 7,
+        "upgrade_options_request": 8,
+        "upgrade_request": 9
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_check_miles": 13,
+        "action_offer_alternative": 14,
+        "action_offer_cash_miles": 15,
+        "action_confirm_upgrade": 16,
+        "action_handle_seat_selection": 17,
+        "utter_ask_miles_balance": 18,
+        "utter_ask_seat_preference": 19,
+        "utter_confirm_upgrade": 20,
+        "utter_goodbye": 21,
+        "utter_offer_alternative": 22,
+        "utter_offer_cash_miles": 23
+      },
+      "entities": {
+        "destination_city": 0,
+        "flight_date": 1,
+        "origin_city": 2,
+        "upgrade_class": 3
+      },
+      "slots": {
+        "miles_balance_0": 0,
+        "miles_balance_1": 1,
+        "upgrade_available_0": 2,
+        "upgrade_available_1": 3,
+        "upgrade_class_0": 4,
+        "seat_preference_0": 5
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}
