@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Can I pay using cash and miles?",
+    "intent": "upgrade_payment_options",
+    "intent_prediction": {
+      "name": "upgrade_request",
+      "confidence": 0.5066919326782227
+    }
+  },
+  {
+    "text": "I don't have enough miles, can I use cash?",
+    "intent": "upgrade_payment_options",
+    "intent_prediction": {
+      "name": "upgrade_request",
+      "confidence": 0.8645235896110535
+    }
+  }
+]

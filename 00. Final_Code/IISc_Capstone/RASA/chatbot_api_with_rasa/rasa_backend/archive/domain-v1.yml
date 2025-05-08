@@ -1,0 +1,93 @@
+version: "3.1"
+
+intents:
+  - upgrade_request
+  - upgrade_options_request
+  - cash_miles_upgrade_request
+  - seat_selection_request
+  - positive_confirmation
+  - provide_pnr
+  - accept_cash_miles_offer
+
+entities:
+  - origin_city
+  - destination_city
+  - flight_date
+  - upgrade_class
+
+forms:
+  flight_upgrade_form:
+    required_slots:
+      - pnr
+      - customer_id
+
+slots:
+  miles_balance:
+    type: float
+    mappings:
+      - type: custom
+
+  upgrade_available:
+    type: bool
+    mappings:
+      - type: custom
+
+  upgrade_class:
+    type: text
+    mappings:
+      - type: custom
+
+  seat_preference:
+    type: text
+    mappings:
+      - type: custom
+
+  pnr:
+    type: text
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: flight_upgrade_form
+            requested_slot: pnr
+
+  customer_id:
+    type: text
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: flight_upgrade_form
+            requested_slot: customer_id
+
+
+responses:
+
+  utter_ask_pnr:
+    - text: "Please provide your PNR number."
+
+  utter_ask_customer_id:
+    - text: "Thanks. Could you also share your customer ID?"
+
+  utter_offer_cash_miles:
+    - text: "You can upgrade using INR 8000 + 20,000 miles. Would you like to proceed?"
+
+  utter_offer_alternative:
+    - text: "Premium economy is available for 25,000 miles. Would you like to switch?"
+
+  utter_ask_seat_preference:
+    - text: "Would you like a window or aisle seat?"
+
+  utter_ask_miles_balance:
+    - text: "Let me check your frequent flyer miles balance and available upgrade options."
+
+  utter_confirm_upgrade:
+    - text: "Your upgrade has been confirmed and logged. You will receive an email shortly."
+
+actions:
+  - action_check_pnr_status 
+  - action_cancel_booking
+  - action_fetch_booking_details
+  - action_offer_cash_miles
+  - action_confirm_upgrade
+  - action_check_miles # To be Implemented
+  - action_offer_alternative # To be Implemented
+  - action_handle_seat_selection # To be implemented

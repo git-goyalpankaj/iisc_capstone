@@ -1,0 +1,286 @@
+version: '3.1'
+intents:
+- accept_cash_miles_offer
+- additional_request
+- airline_travel_policy
+#- airport_facilities
+- available_upgrades
+#- baggage_allowance_query
+- book_flight
+- cancel_booking
+#- carry_on_rules
+#- cash_miles_upgrade_request
+#- check_flight_availability
+#- check_in_and_boarding
+- chit_chat
+- clarification
+#- corporate_travel
+- disruption_reporting
+- emergency_escort
+#- emergency_situation
+- enroll_loyalty_program
+#- escalation #merged with human_agent
+#- excess_baggage_fees
+#- fare_quote
+- final_check
+- flight_status
+- follow_up_request
+#- general_assistance
+- goodbye
+- greeting
+#- in_flight_services
+#- inquiry_about_changes
+- issue_resolution_follow_up
+- lost_property
+#- loyalty_program_info
+#- meal_preference
+- modify_booking
+- negative_confirmation
+- negative_service_feedback
+- off_topic
+#- passport_visa
+#- payment_method
+- points_balance_query
+- positive_confirmation
+- positive_service_feedback
+- provide_booking_details
+- refund_status
+- report_suspicious_activity
+- report_theft
+- request_human_agent
+- request_service_availability
+#- schedule_query
+- seat_selection_request
+#- service_feedback
+#- special_assistance
+#- special_baggage_request
+#- technical_support
+- terrorism_alert
+- thank_you
+#- unaccompanied_minor
+#- unavailable_service #merged with off-topic
+- upgrade_class_confirmation
+- upgrade_confirmation
+- upgrade_eligibility
+#- upgrade_options_request
+- upgrade_payment_options
+- upgrade_request
+
+responses:
+  utter_greeting:
+  - text: Hello! How can I help you today?
+  - text: Hi there! What can I do for you?
+  - text: Hey! Need help with anything?
+  
+  utter_thank_you:
+  - text: You're very welcome!
+  - text: Happy to help!
+  - text: Glad I could assist you!
+  
+  utter_goodbye:
+  - text: Goodbye! Safe travels.
+  - text: See you next time!
+  - text: Take care!
+  
+  utter_chit_chat:
+  - text: I'm doing great, thanks for asking! How about you?
+  - text: All systems are up and running! 😊
+  - text: I'm just a bot, but I'm always happy to help!
+  - text: Things are going smoothly. What can I do for you today?
+  
+  utter_ask_departure_city:
+  - text: From which city are you departing?
+  
+  utter_ask_arrival_city:
+  - text: Where are you flying to?
+  
+  utter_ask_travel_date:
+  - text: When do you want to travel?
+  
+  utter_flight_booking_confirmation:
+  - text: Your PNR is BNI1010, Thank your for flying with SkyWings!! You ticket will be emailed to you.
+  
+  utter_off_topic:
+  - text: Sorry, I can't respond to that request. Is there anything related to SkyWings services that I can help you with
+  
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  
+  utter_positive_feedback:
+  - text: Glad to hear your feedback. Assuring you of best service always. See you again very soon!
+  - text: Happy to note that. Assuring you of best service always. See you again very soon!
+  
+  utter_negative_feedback:
+  - text: I'm sorry about your experience. Our Customer service executive will reach out to you very soon.
+  - text: Extremely sorry to hear this. Assuring you of best services in your next flight with us.
+  - text: Aplogies from Skywings for your bad experience on our flight. We will look into this matter and ensure the issue never happens in future. Assuring you that we are committed to make your travel a safe and an enjoyable experience.
+  
+  utter_ask_pnr:
+  - text: Please provide your PNR number.
+  
+  utter_ask_customer_id:
+  - text: Thanks. Could you also share your customer ID?
+  
+  utter_offer_cash_miles:
+  - text: You can upgrade using INR 8000 + 20,000 miles. Would you like to proceed?
+  
+  utter_offer_alternative:
+  - text: Premium economy is available for 25,000 miles. Would you like to switch?
+  
+  utter_ask_seat_preference:
+  - text: Would you like a window or aisle seat?
+  
+  utter_ask_miles_balance:
+  - text: Let me check your frequent flyer miles balance and available upgrade options.
+  
+  utter_confirm_upgrade:
+  - text: Your upgrade has been confirmed and logged. You will receive an email shortly.
+
+  utter_fallback:
+  - text: Sorry, I didn’t quite understand that. Could you rephrase?
+  
+  utter_default:
+  - text: Sorry I didn't get that. Can you rephrase?
+  
+  utter_modify_booking:
+  - text: I understand that you want to modify your booking. Currently, I am unable to perform this action as I am still learning!
+  
+  utter_cancel_booking:
+  - text: I understand that you want to cancel your booking. Currently, I am unable to perform this action as I am still learning!
+  
+  utter_enroll_loyalty_program:
+  - text: I understand that you want to enroll for loyalty program. Currently, I am unable to perform this action as I am still learning!
+  
+  utter_points_balance_query:
+  - text: I understand that you are enquiring about points balance. Currently, I am unable to perform this action as I am still learning!
+  
+  utter_upgrade_eligibility:
+  - text: I understand that you want to check your eligibility for upgrade. Currently, I am unable to perform this action as I am still learning!
+  
+  utter_available_upgrades:
+  - text: I understand that you want know about the upgrades available. Currently, I am unable to perform this action as I am still learning!
+  
+  utter_upgrade_payment_options:
+  - text: I understand that you want to understand the payment options for upgrades. Currently, I am unable to perform this action as I am still learning!
+  
+  utter_upgrade_confirmation:
+  - text: I understand that you are confirming your upgrade. Currently, I am unable to perform this action as I am still learning!
+  
+  utter_refund_status:
+  - text: I understand that you want to check your refund status. Currently, I am unable to perform this action as I am still learning!
+  
+  utter_flight_status:
+  - text: I understand that you want to know the flight status. Currently, I am unable to perform this action as I am still learning!
+  
+  utter_report_suspicious_activity:
+  - text: Thank you for being vigilant and reporting this. I will inform the concerned authorities!
+  
+  utter_disruption_reporting:
+  - text: Thank you for being vigilant and reporting this. I will inform the concerned authorities!
+  
+  utter_lost_property:
+  - text: I understand that want to track your lost property. Currently, I am unable to perform this action as I am still learning!
+  
+  utter_report_theft:
+  - text: I understand your situation, please reach out to the relevant authorities or contact ground staff for help!
+  
+  utter_terrorism_alert:
+  - text: Thank you for being vigilant and reporting this. I will inform the concerned authorities!
+  
+  utter_emergency_escort:
+  - text: Your safety is of prime importance and for more details please reach out to airport security or contact our ground staff!
+  
+  utter_request_human_agent:
+  - text: I understand you want to talk to a human. Currently, I am unable to perform this action as I am still learning!
+  
+  utter_seat_selection_request:
+  - text: I understand you want to select a seat for your travel. Currently, I am unable to perform this action as I am still learning!
+
+
+entities:
+- departure_city
+- arrival_city
+- travel_date
+- origin_city
+- destination_city
+- flight_date
+- upgrade_class
+
+slots:
+  departure_city:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: departure_city
+  arrival_city:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: arrival_city
+  travel_date:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: travel_date
+  miles_balance:
+    type: float
+    mappings:
+    - type: custom
+  upgrade_available:
+    type: bool
+    mappings:
+    - type: custom
+  upgrade_class:
+    type: text
+    mappings:
+    - type: custom
+  seat_preference:
+    type: text
+    mappings:
+    - type: custom
+  pnr:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: flight_upgrade_form
+        requested_slot: pnr
+  customer_id:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: flight_upgrade_form
+        requested_slot: customer_id
+forms:
+  flight_booking_form:
+    required_slots:
+    - departure_city
+    - arrival_city
+    - travel_date
+  flight_upgrade_form:
+    required_slots:
+    - pnr
+    - customer_id
+actions:
+- utter_positive_feedback
+- utter_goodbye
+- utter_greeting
+- utter_thank_you
+- utter_negative_feedback
+- action_book_flight
+- action_default_fallback
+- consult_airline_travel_policy
+- action_check_miles
+- action_offer_alternative
+- action_offer_cash_miles
+- action_confirm_upgrade
+- action_handle_seat_selection
+- action_fetch_booking_details
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

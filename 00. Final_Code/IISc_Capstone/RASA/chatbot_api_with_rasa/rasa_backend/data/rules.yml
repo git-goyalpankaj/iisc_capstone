@@ -1,0 +1,169 @@
+version: "3.1"
+
+rules:
+- rule: respond to greeting anytime
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+
+- rule: respond to thank you anytime
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- rule: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: handle chit chat
+  steps:
+  - intent: chit_chat
+  - action: utter_chit_chat
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+- rule: reponse to off topic messages coming from customers
+  steps:
+  - intent: off_topic
+  - action: utter_off_topic
+
+- rule: reponse to policy related question
+  steps:
+  - intent: airline_travel_policy
+  - action: consult_airline_travel_policy
+
+
+- rule: Trigger upgrade intent
+  steps:
+  - intent: upgrade_request
+  - action: flight_upgrade_form
+  - active_loop: flight_upgrade_form
+
+- rule: Submit upgrade form
+  condition:
+  - active_loop: flight_upgrade_form
+  steps:
+  - action: flight_upgrade_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_fetch_booking_details
+  - action: action_offer_cash_miles
+
+- rule: Accept cash+mile upgrade
+  steps:
+  - intent: accept_cash_miles_offer
+  - action: action_confirm_upgrade
+
+- rule: Positive Service Feedback
+  steps:
+  - intent: positive_service_feedback
+  - action: utter_positive_feedback
+
+- rule: Negative Service Feedback
+  steps:
+  - intent: negative_service_feedback
+  - action: utter_negative_feedback
+
+- rule: Handle positive confirmation after offer
+  condition:
+    - slot_was_set:
+        - upgrade_available: true
+  steps:
+    - intent: upgrade_class_confirmation
+    - action: action_confirm_upgrade
+
+- rule: Modify Booking
+  steps:
+  - intent: modify_booking
+  - action: utter_modify_booking
+
+- rule: Cancel Booking
+  steps:
+  - intent: cancel_booking
+  - action: utter_cancel_booking
+
+- rule: enroll_loyalty_program
+  steps:
+  - intent: enroll_loyalty_program
+  - action: utter_enroll_loyalty_program
+
+- rule: points_balance_query
+  steps:
+  - intent: points_balance_query
+  - action: utter_points_balance_query
+
+- rule: upgrade_eligibility
+  steps:
+  - intent: upgrade_eligibility
+  - action: utter_upgrade_eligibility
+
+- rule: available_upgrades
+  steps:
+  - intent: available_upgrades
+  - action: utter_available_upgrades
+
+- rule: upgrade_payment_options
+  steps:
+  - intent: upgrade_payment_options
+  - action: utter_upgrade_payment_options
+
+- rule: upgrade_confirmation
+  steps:
+  - intent: upgrade_confirmation
+  - action: utter_upgrade_confirmation
+
+- rule: refund_status
+  steps:
+  - intent: refund_status
+  - action: utter_refund_status
+
+- rule: flight_status
+  steps:
+  - intent: flight_status
+  - action: utter_flight_status
+
+- rule: report_suspicious_activity
+  steps:
+  - intent: report_suspicious_activity
+  - action: utter_report_suspicious_activity
+
+- rule: disruption_reporting
+  steps:
+  - intent: disruption_reporting
+  - action: utter_disruption_reporting
+
+- rule: lost_property
+  steps:
+  - intent: lost_property
+  - action: utter_lost_property
+
+- rule: report_theft
+  steps:
+  - intent: report_theft
+  - action: utter_report_theft
+
+- rule: terrorism_alert
+  steps:
+  - intent: terrorism_alert
+  - action: utter_terrorism_alert
+
+- rule: emergency_escort
+  steps:
+  - intent: emergency_escort
+  - action: utter_emergency_escort
+
+- rule: request_human_agent
+  steps:
+  - intent: request_human_agent
+  - action: utter_request_human_agent
+
+- rule: seat_selection_request
+  steps:
+  - intent: seat_selection_request
+  - action: utter_seat_selection_request
+

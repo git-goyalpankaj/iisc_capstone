@@ -1,0 +1,6 @@
+1. ngrok http 5001 (C:\IISc_Capstone\RASA)
+2. twilio_bot.py (C:\IISc_Capstone\RASA\chatbot_api_with_rasa\WhatsApp)
+3. uvicorn main:app --reload (C:\IISc_Capstone\RASA\chatbot_api_with_rasa\chatbot_api)
+4. Ollama Server - ollama run mistral (C:\Windows\System32>)
+5. rasa run actions :  (rasa_env) (pankeeIISc) c:\IISc_Capstone\RASA\chatbot_api_with_rasa\rasa_backend>
+6. rasa shell : (rasa_env) (pankeeIISc) C:\IISc_Capstone\RASA\chatbot_api_with_rasa\rasa_backend>

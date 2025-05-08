@@ -1,0 +1,19 @@
+[
+  {
+    "text": "I don't have enough miles, can I pay cash?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "payment_method",
+        "start": 37,
+        "end": 41,
+        "confidence_entity": 0.5774789452552795,
+        "value": "cash",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

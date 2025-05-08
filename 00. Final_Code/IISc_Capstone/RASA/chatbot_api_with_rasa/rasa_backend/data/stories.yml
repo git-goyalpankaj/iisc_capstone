@@ -1,0 +1,59 @@
+version: "3.1"
+
+stories:
+  - story: Book a flight via form without rules
+    steps:
+    - intent: book_flight
+      entities:
+        - departure_city: "Delhi"
+        - arrival_city: "Mumbai"
+        - travel_date: "10th May"
+    - action: flight_booking_form
+    - active_loop: flight_booking_form
+    - active_loop: null
+    - action: action_book_flight
+    - action: utter_flight_booking_confirmation
+
+  - story: Book a flight - ask for departure city
+    steps:
+    - intent: book_flight
+    - action: flight_booking_form
+    - active_loop: flight_booking_form
+    - slot_was_set:
+        - requested_slot: departure_city
+    - action: utter_ask_departure_city
+    - intent: provide_booking_details
+      entities:
+        - departure_city: "Delhi"
+    - action: flight_booking_form
+    - slot_was_set:
+        - departure_city: "Delhi"
+    - slot_was_set:
+        - requested_slot: arrival_city
+    - action: utter_ask_arrival_city
+    - intent: provide_booking_details
+      entities:
+        - arrival_city: "Mumbai" 
+    - action: flight_booking_form
+    - slot_was_set:
+        - arrival_city: "Mumbai"
+    - slot_was_set:
+        - requested_slot: travel_date
+    - action: utter_ask_travel_date
+    - intent: provide_booking_details
+      entities:
+        - travel_date: "10th May"
+    - action: flight_booking_form
+    - slot_was_set:
+        - travel_date: "10th May"
+    - slot_was_set:
+        - requested_slot: null
+    - active_loop: null
+    - action: action_book_flight
+    - action: utter_flight_booking_confirmation
+  
+  - story: Trigger upgrade form
+    steps:
+    - intent: upgrade_request
+    - action: flight_upgrade_form
+    - active_loop: flight_upgrade_form

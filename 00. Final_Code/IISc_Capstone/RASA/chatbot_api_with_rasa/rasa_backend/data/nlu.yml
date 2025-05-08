@@ -1,0 +1,580 @@
+version: "3.1"
+nlu:
+- intent: greeting
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+    - Good morning
+    - Good evening
+    - Howdy
+- intent: thank_you
+  examples: |
+    - Thank you
+    - Thanks
+    - Thanks a lot
+    - I appreciate it
+    - Bye and thank you for all your help
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - Bye
+    - See you later
+    - Take care
+    - Good bye
+    - thank you and goodbye
+- intent: chit_chat
+  examples: |
+    - How are you?
+    - How's it going?
+    - What's up?
+    - How do you do?
+    - How have you been?
+    - What's new?
+    - What's going on?
+    - Hows everything?
+- intent: book_flight
+  examples: |
+    - Can you help me book a flight ticket ?
+    - I want to book a flight from [Delhi](departure_city) to [Mumbai](arrival_city) on [10th May](travel_date)
+    - Book a ticket from [New York](departure_city) to [London](arrival_city) for [next Friday](travel_date)
+    - Can you help me book a flight to [Paris](arrival_city) from [Berlin](departure_city) for [15th June](travel_date)?
+    - I need to book a ticket from [Hyderabad](departure_city) to [Chennai](arrival_city)
+    - Please create a booking for my trip to [Tokyo](arrival_city)
+- intent: modify_booking
+  examples: |
+    - I want to [change](modify_action) my travel date to [12th June](travel_date)
+    - Can you help me [modify](modify_action) my booking from [Delhi](departure_city) to [Goa](arrival_city)?
+    - I would like to [update](modify_action) my flight details
+    - [Reschedule](modify_action) my booking for a later date
+    - [Reschedule](modify_action) my flight from [Mumbai](departure_city) to [Pune](arrival_city) to [18th May](travel_date)
+    - [Change](modify_action) my travel date to [Monday](travel_date)
+    - I need to [shift](modify_action) my flight to [next Sunday](travel_date)
+    - Can I [move](modify_action) my booking to [25th April](travel_date)?
+- intent: cancel_booking
+  examples: |
+    - I want to cancel my flight
+    - Cancel my ticket with PNR [ABC123](pnr)
+    - Can you cancel my reservation with ID [789654](booking_id)?
+    - Please cancel my trip
+    - I no longer want to go on this flight
+- intent: provide_booking_details
+  examples: |
+    - My PNR is [ABC123](pnr) and customer ID is [789654](booking_id)
+    - Here is my booking: [ABC123](pnr), ID [789654](booking_id)
+    - The PNR number is [DEF456](pnr)
+    - My booking reference is [XYZ789](pnr)
+    - Here's my reservation number [123456](booking_id)
+- intent: enroll_loyalty_program
+  examples: |
+    - I want to join the loyalty program
+    - Can I register for frequent flyer?
+    - Sign me up for your rewards program
+    - Enroll me in the mileage plan
+    - How do I become a member?
+- intent: points_balance_query
+  examples: |
+    - How many miles do I have?
+    - Check my frequent flyer balance
+    - What is my mileage balance?
+    - Show my reward points
+    - How many points do I have in my account?
+- intent: upgrade_eligibility
+  examples: |
+    - Can I upgrade using my [loyalty ID](loyalty_id)?
+    - Am I eligible for an upgrade?
+    - Do I have enough miles for an upgrade?
+    - I want to upgrade to [business](flight_class), am I eligible?
+    - Can my status get me an upgrade?
+- intent: available_upgrades
+  examples: |
+    - What upgrades are available?
+    - Can I see all upgrade options?
+    - What class can I upgrade to?
+    - Are upgrades to [premium economy](flight_class) available?
+    - What seat upgrades do you offer?
+- intent: upgrade_payment_options
+  examples: |
+    - Can I pay using [cash and miles](payment_method)?
+    - I don't have enough miles, can I use [cash](payment_method)?
+    - Is [miles](payment_method) the only option for upgrade?
+    - What are the payment options for upgrade?
+    - Can I use my credit card for the upgrade?
+- intent: upgrade_confirmation
+  examples: |
+    - Yes, confirm the upgrade to business class
+    - I want to go ahead with the premium economy upgrade
+    - Please confirm using miles for my upgrade
+    - Confirm the upgrade using [cash](payment_method)
+    - Process my upgrade request
+- intent: refund_status
+  examples: |
+    - Can you check if my refund has been processed?
+    - Has my refund been issued yet?
+    - What is the status of my refund?
+    - I would like to know if my refund is complete.
+    - When will my refund be processed?
+    - I want to know the status of my refund
+    - Can you check if my refund has been processed yet?
+    - Has my refund been issued for the cancelled flight?
+    - I'm waiting for a refund, can you update me on the status?
+    - I requested a refund, when will it be processed?
+    - Can you tell me when my refund will be processed?
+- intent: airline_travel_policy
+  examples: |
+    - What is the pet policy on flights?
+    - Until when are Expectant Mothers permitted to fly?
+    - What is your policy on name changes?
+    - Tell me about your cancellation policy
+    - What's your policy on missed flights?
+    - What's the policy for pregnant travelers?
+    - What's the child travel policy?
+    - Are there any travel restrictions due to COVID?
+    - What are the COVID guidelines for traveling to [USA]?
+    - Is a negative COVID test required for flying to [Australia]?
+    - Are there quarantine requirements for travelers to [Canada]?
+    - What is the COVID vaccination policy for traveling to [Italy]?
+    - Do I need to wear a mask on the flight?
+    - Do I need a visa to travel to [Germany]?
+    - Is a visa required for visiting [France]?
+    - What documents do I need to travel to [India]?
+    - Do I require a visa to go to [Brazil]?
+    - What are the visa requirements for [Japan]?
+    - Do I need a passport to fly domestically?
+    - When is the next flight from [New York] to [London]?
+    - What time is the first flight from [Paris] to [Berlin]?
+    - How many flights are there from [Los Angeles] to [Chicago] tomorrow morning?
+    - What is the last flight from [San Francisco] to [New York] today?
+    - When does the next flight to [Bangalore] depart?
+    - At what time does the [Tokyo] to [Los Angeles] flight depart today?
+    - What is the schedule for flights from [Toronto] to [Vancouver] this evening?
+    - I need a wheelchair at the airport
+    - Can I get assistance for my elderly parent?
+    - I require special assistance for my flight due to mobility issues
+    - Do you provide help for passengers with reduced mobility?
+    - I need assistance for a hearing-impaired passenger
+    - What services do you offer for visually impaired travelers?
+    - My child has special needs, what assistance is available?
+    - Can you assist me with my boarding pass?
+    - I need help finding my gate
+    - How can I request assistance with my luggage?
+    - I need help getting to the lounge
+    - Is there someone who can help me find my way?
+    - How do I request general assistance at the airport?
+    - Can I get help navigating the airport?
+    - Can I request a vegetarian meal?
+    - Do you offer gluten-free meal options?
+    - I would like a vegan meal on the flight
+    - Can I order a kosher meal for my flight?
+    - Do you have halal meal options available?
+    - Can I get a low-carb meal?
+    - I need a diabetic-friendly meal for my flight
+    - I need to arrange travel for an unaccompanied minor
+    - How do I book a flight for an unaccompanied child?
+    - Can you assist me with the procedure for an unaccompanied minor?
+    - I want to make special arrangements for my child who will be traveling alone
+    - What is the process for sending an unaccompanied minor on a flight?
+    - What documentation is needed for an unaccompanied minor?
+    - What entertainment options are available on the flight?
+    - Is there Wi-Fi on board?
+    - Do you offer blankets and pillows?
+    - What meals are served on long-haul flights?
+    - Is duty-free shopping available during the flight?
+    - Do you have power outlets at the seats?
+    - What movies are playing on my flight?
+    - What should I do in case of a medical emergency on the flight?
+    - How do I respond to a fire onboard the plane?
+    - What is the procedure for an emergency landing?
+    - What should I do if there's a sudden loss of cabin pressure?
+    - How do I alert the crew in case of an emergency?
+    - What happens if a passenger becomes seriously ill during the flight?
+    - What do I do if there's a sudden in-flight medical emergency?
+    - The website is not loading properly
+    - I can't complete my booking online
+    - The mobile app keeps crashing
+    - I'm having trouble accessing my account
+    - The payment page is giving an error
+    - My e-ticket is not showing in the app
+    - How do I reset my password?
+    - How much is a flight from [New York] to [London]?
+    - What is the cost of a flight from [Paris] to [Berlin]?
+    - Can you give me a quote for a flight from [San Francisco] to [Tokyo]?
+    - How much does a ticket from [Chicago] to [Los Angeles] cost?
+    - What is the price for a flight from [London] to [Dubai]?
+    - How much will I pay for a round trip to [Sydney]?
+    - Are there flights from [Delhi] to [Mumbai] today?
+    - What flights are available from [San Francisco] to [Chicago]?
+    - Do you have flights from [London] to [Berlin] tomorrow?
+    - Can I book a flight from [Los Angeles] to [Miami] for this weekend?
+    - Are there any flights from [Dubai] to [Abu Dhabi] this evening?
+    - What are the available flights from [New York] to [Tokyo] next week?
+    - Can I fly from [Paris] to [Rome] on [Friday]?
+    - What payment methods do you accept?
+    - How can I pay for my flight?
+    - Can I pay with a credit card?
+    - Do you accept PayPal?
+    - Are there any other payment options available?
+    - Can I pay in installments?
+    - Tell me about your loyalty program
+    - What is the frequent flyer program called?
+    - How do I earn miles?
+    - Is there a rewards program?
+    - What benefits do loyalty members get?
+    - How much baggage can I carry in [economy](flight_class)?
+    - What's the baggage allowance for [business class](flight_class)?
+    - Tell me the check-in luggage limit
+    - How many bags are allowed for domestic flights?
+    - What's the maximum weight for checked baggage?
+    - How many kilos can I bring on my flight?
+    - What are the charges for extra baggage?
+    - How much do I pay if I carry [25kg](weight) instead of [20kg](weight)?
+    - Are there fees for excess luggage?
+    - I think my bag is overweight, what do I do?
+    - What's the cost for additional baggage?
+    - Can I carry a [laptop](item) in cabin?
+    - Is [handbag](item) allowed inside?
+    - What are the cabin baggage rules?
+    - Can I take [liquids](item) on board?
+    - Are there restrictions on cabin baggage size?
+    - How do I check in?
+    - Can I check in online?
+    - Is web check-in available?
+    - When does the check-in counter open at the [Delhi airport](airport)?
+    - When should I reach the gate?
+    - What is the boarding time?
+    - How early should I be at the airport?
+    - When does boarding start?
+    - Is mobile check-in available?
+    - Can I get my boarding pass at the airport?
+    - I'm travelling with a [baby stroller](item), is that allowed?
+    - Can I check in a [surfboard](item)?
+    - I want to carry a [pet](item), what are the rules?
+    - Are musical instruments allowed in checked baggage?
+    - Can I bring sports equipment on the flight?
+    - How do I transport fragile items?
+    - How can I contact customer care ?
+    - I have a feedback for my recent flight experience! How to contact customer support?
+    - How can I contact customer support ?
+    - Could you clarify the baggage policy again?
+    - Hello, I have a query regarding partial refunds for partially used flight segments. Is it possible to receive a refund for a portion of the ticket price for a flight that I have already taken?
+    - I want to lodge a formal complaint about my recent flight experience
+    - I need to file an official complaint regarding my last trip
+    - What's the procedure to submit a formal complaint?
+    - I had a bad experience with my booking, where do I submit my official complaint?
+    - Can I submit a formal complaint about the delays I faced?
+    - How can I make a formal complaint regarding a damaged bag?
+    - What's the address to send a written complaint?
+
+- intent: flight_status
+  examples: |
+    - Is my flight to [Bangalore] delayed?
+    - Is my flight from [New York] to [London] on time?
+    - Has my [Delhi] to [Mumbai] flight been canceled?
+    - What is the status of my flight to [Paris]?
+    - Are there any delays for the flight to [Tokyo]?
+    - Is my [Los Angeles] flight delayed today?
+    - Is the flight from [Chicago] to [Houston] running on schedule?
+    - Can you update me on the flight status?
+- intent: report_suspicious_activity
+  examples: |
+    - I saw something unusual at the airport, should I report it?
+    - There is something strange happening near my gate, who should I notify?
+    - I think I saw a suspicious person, what should I do?
+    - I noticed an unattended bag, should I inform security?
+    - Someone seems to be acting suspiciously, what should I do?
+    - I saw a person trying to access a restricted area, should I report it?
+- intent: disruption_reporting
+  examples: |
+    - My flight has been cancelled, what are my options?
+    - My flight is delayed, what can I do?
+    - What should I do if my flight is diverted to another airport?
+    - I was told my flight is overbooked, what should I do?
+    - My flight has been delayed for several hours, what assistance can I get?
+    - What are my rights if my flight is cancelled due to bad weather?
+    - How do I rebook my flight if it's been cancelled?
+- intent: lost_property
+  examples: |
+    - I lost my jacket at the airport, where can I report it?
+    - Someone took my bag by mistake, how can I track it down?
+    - How do I recover lost items from the plane or airport?
+    - I left my phone on the plane, how do I get it back?
+    - I lost my laptop in the airport lounge, what can I do?
+    - What should I do if I've lost my personal belongings on the flight?
+    - I accidentally left my passport in the restroom, how do I find it?
+- intent: report_theft
+  examples: |
+    - I think my bag has been stolen, what should I do?
+    - Someone stole my wallet at the airport, how do I report it?
+    - I suspect someone has taken my laptop from my bag, how do I report it?
+    - How do I report a theft at the airport?
+    - My belongings were stolen during the flight, who do I contact?
+    - I need to file a police report for stolen items, how do I proceed?
+- intent: terrorism_alert
+  examples: |
+    - I think I heard something about a bomb threat, what should I do?
+    - Is there a procedure in case of a terrorist threat on the plane?
+    - I heard someone make a suspicious comment at the airport, what do I do?
+    - How do I report a potential terrorism threat?
+    - I suspect there might be a terror threat, what actions should I take?
+    - I think I overheard something about a planned attack, who should I notify?
+- intent: emergency_escort
+  examples: |
+    - How can I request an escort in case of an emergency at the airport?
+    - I need help getting to the gate after an emergency situation, can I get an escort?
+    - Is there an emergency assistance service available at the airport?
+    - Can I request a security escort to my gate due to an emergency?
+    - How do I arrange for emergency assistance if I'm at risk of missing my flight?
+    - What do I do if I need to be escorted to a safe area during an emergency?
+- intent: request_human_agent
+  examples: |
+    - I want to speak to a customer service representative
+    - Can I talk to a live agent, please?
+    - I need to speak with someone from customer support
+    - I'd like to escalate this to a human agent
+    - Please connect me to a real person
+    - I prefer speaking to a customer support agent directly
+    - I'm not satisfied with the information, please transfer me to a human agent
+    - This is an urgent matter, please escalate
+    - I need this issue resolved immediately, can you escalate it?
+    - This is a time-sensitive issue, can you escalate it to someone higher?
+    - Can I escalate this to a supervisor?
+    - I need to speak to a manager right now
+    - This issue is urgent, please prioritize it
+    - I need immediate attention, please escalate this request
+
+- intent: positive_service_feedback
+  examples: |
+    - Excellent meals during my flight.
+    - Thoroughly enjoyed meal service during my flight.
+    - What a polite cabin crew you have.
+    - Cabin crew was very polite.
+    - Cabin crew is very patient.
+    - Prompt service during the flight.
+    - Super responsive cabin crew.
+    - Lovely to hear timely announcements from flight captain.
+    - You have impeccable record of running timely flights.
+    - I'd like to give feedback on the service I received
+    - The customer service has been very helpful, I just wanted to let you know
+    - I had a great experience today, thanks for your help
+    - Your team was very responsive, I appreciate it
+    - The process was smooth, but I would like some improvements
+    - I'd like to share my thoughts about your service
+    - Can I share feedback about my recent flight?
+- intent: negative_service_feedback
+  examples: |
+    - I'd like to give feedback on poor service I received in last flight.
+    - The customer service has been very poor, I just wanted to let you know.
+    - I had a bad experience in last flight.
+    - I had an awful experience in today's flight.
+    - I am not happy with economy class seats.
+    - Poor meals provided in flight.
+    - I want to report bad behavior from ground staff during my recent journey.
+    - In-flight entertainment did not offer variety.
+    - Boring movies, shows.
+    - Wifi did not work.
+    - Satellite phone did not work.
+    - Cabin and seat comfort is below par.
+    - Received damaged luggage after the flight.
+    - I was charged excessive extra baggage fees.
+    - There was no SMS about delay in flight departure timings.
+    - There was no communication about change in flight departure time.
+    - I paid for early boarding service, but staff did not let me in ahead of queue.
+    - Boarding gate was changed last minute without advanced communication.
+    - I found garbage under my seat.
+    - Seats were not cleaned.
+    - Seat was stinking.
+    - Toilet was not cleaned.
+    - Toilet was stinking.
+    - There was inappropriate behaviour by fellow passengers.
+    - There was a fight amongst passengers.
+    - Toilet had tobacco smell.
+    - Wifi did not work
+    - I am unhappy about the flight experience
+- intent: issue_resolution_follow_up
+  examples: |
+    - I need to follow up on an issue I raised earlier
+    - Has my issue been resolved yet?
+    - I'd like to know the status of the problem I reported
+    - Can you give me an update on my previous complaint?
+    - I called earlier, and the issue wasn't resolved, can you check?
+    - I'm waiting for a resolution, can you escalate?
+    - Is there any progress on the issue I reported last week?
+- intent: request_service_availability
+  examples: |
+    - Is this service available for my destination?
+    - Can I book a last-minute flight through this platform?
+    - Are there available slots for a new booking on your website?
+    - Do you have assistance available at the airport for special needs?
+    - Can I get a flight from New York to Paris tomorrow?
+    - Is the VIP service available for my upcoming flight?
+- intent: positive_confirmation
+  examples: |
+    - Yes, proceed with the booking
+    - Go ahead with the reservation
+    - Please confirm the flight
+    - Yes, I'm ready to proceed with my payment
+    - Yes, that looks good, confirm the details
+    - Proceed with the flight booking, please
+    - Confirm the reservation for me
+    - Yes, I want to confirm the details
+- intent: negative_confirmation
+  examples: |
+    - No, I don't want to make any changes
+    - Don't proceed with the booking
+    - I'm not ready to confirm yet
+    - No, I'll check the details later
+    - Don't proceed with the reservation, I need to modify it
+    - No, I don't want to continue at this point
+    - I changed my mind, don't confirm the flight
+    - No, I want to cancel the booking
+- intent: clarification
+  examples: |
+    - Could you please confirm the flight details?
+    - What time is the flight from [New York] to [London]?
+    - Can you confirm if my flight is non-stop?
+    - Could you explain the refund process once more?
+    - Can you provide the ticket price again?
+    - Could you confirm my seat selection?
+    - I need to clarify if the flight is refundable
+    - Can you recheck the flight times for me?
+    - I need to reassess the prices for different dates
+    - Can you go over the flight details again?
+    - I want to double-check the baggage allowance
+    - Can you confirm if there are any seat upgrades available?
+    - Please review the itinerary and let me know if anything has changed
+    - Can you double-check the availability for flights from [Delhi] to [Mumbai]?
+- intent: follow_up_request
+  examples: |
+    - I'd like to follow up on my previous booking
+    - I need to check if the issue has been resolved
+    - Can I get an update on my refund request?
+    - I'd like to follow up on the complaint I filed earlier
+    - Have there been any changes to my reservation?
+    - Is my request for special assistance confirmed?
+    - Can you remind me of the flight details?
+    - Can you confirm if my seat selection is available?
+    - Is my flight booking confirmed?
+    - I need confirmation for the special assistance request
+    - Please confirm my meal preference is set as vegetarian
+    - Can you verify that the extra baggage allowance is confirmed?
+    - Is my booking for an unaccompanied minor confirmed?
+- intent: additional_request
+  examples: |
+    - Is there anything else I need to do for my booking?
+    - Do I need to provide any more information for my reservation?
+    - Are there any additional steps I need to complete?
+    - Is there anything else I should know before my flight?
+    - Is there something I missed in my booking process?
+    - Do I need to provide any additional documents?
+    - Is there any further action required from my side?
+    - Should I confirm anything else before I complete the process?
+    - Can I change my booking after confirming it?
+    - Is it possible to modify my flight details now?
+    - Can I update my meal preferences after the booking?
+    - Can I change the dates after I confirmed the reservation?
+    - Is it too late to change my flight after confirming the booking?
+    - How do I make changes to a confirmed flight booking?
+- intent: final_check
+  examples: |
+    - Is everything set for my flight tomorrow?
+    - Have I completed all the necessary steps for my booking?
+    - Can you confirm if all my details are correct before proceeding?
+    - I want to do a final check on my booking details
+    - Is there anything else I need to confirm before I board?
+    - Are all the details in my itinerary accurate?
+- intent: off_topic
+  examples: |
+    - What's the weather like in New York?
+    - I don't need any help with my flight right now
+    - Can you help me with my hotel booking instead?
+    - How do I get to the nearest restaurant from the airport?
+    - What's the best way to travel around the city?
+    - I'm not asking about my flight, can you help with something else?
+    - Can you tell me about the local attractions?
+    - Tell me a joke
+    - Can you sing a song for me?
+    - What's your favorite color?
+    - Do you like pets?
+    - Can you recommend a movie?
+    - Do you play any games?
+    - What's your opinion on ice cream?
+    - This has nothing to do with flights
+    - I don't want to talk about flights, let's discuss something else
+    - I am not interested in booking a flight right now
+    - Can you stop talking about my flight booking?
+    - This is unrelated to my booking, let's change the topic
+    - I don't want to discuss travel at all
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+    - I want to
+    - I am going
+    - I am an expert horse rider
+    - I love to ride elephant
+    - I killed a tiger
+    - I ran 25 full marathon
+    - I killed so may ants and bees and animals
+    - I am a hunter
+    - You will to to hell
+    - I am selling something online
+    - Check out my new product for sale
+    - I have a great deal on an item, want to buy?
+    - Buy my services today!
+    - Want to buy some electronics?
+    - I'm advertising a new course, check it out!
+    - Visit my online store for discounts
+    - What are your hobbies?
+    - What is your favorite dish?
+    - What is your favorite place?
+    - Who is your favorite Actor?
+    - Who is your favorite Actress?
+    - Favorite actor or actress.
+    - Favorite dish.
+    - Favorite place.
+    - Favorite movie.
+    - What is your favorite movie?
+    - How is nightlife in [Bangalore](city)?
+    - What are tourist places in [Bangalore](city)?
+    - Wanna join for a game of [chess](game)?
+    - Wanna play [hockey](game)?
+    - I need help with my rental car, but I'm only getting flight help
+    - This service doesn't cover hotel bookings, how can I get assistance with that?
+    - I need help with something that's not related to my flight, can you direct me to the right place?
+    - I have a query about my hotel room, but this seems to be only for flights
+    - This service doesn't address my query, can I talk to someone about it?
+- intent: upgrade_request
+  examples: |
+    - I have a flight from Delhi to Bangalore tomorrow, can I upgrade to business class?
+    - I'd like to upgrade to business class using my frequent flyer miles.
+    - Can I upgrade to business class using my miles?
+    - Can I use points to upgrade to premium economy?
+    - I want to upgrade to business using miles I earned
+    - Can I move from economy to business using points?
+    - Is a business class upgrade possible for my ticket?
+    - Hi, I have a booking and I want to use my miles to upgrade to business
+    - I have a flight booked. Can you check if I’m eligible for upgrade using miles?
+    - How many miles do I need to upgrade to business for my Delhi to Bangalore flight?
+    - Is there a cash plus miles option?
+    - Can I pay cash and use miles together for an upgrade?
+    - I don't have enough miles, can I pay cash?
+    - What other upgrade options do I have?
+    - Can I try a different class?
+    - Show me alternative upgrade choices
+
+- intent: upgrade_class_confirmation
+  examples: |
+    - Yes, please go ahead
+    - That sounds good
+    - Sure, proceed with the upgrade
+    - Confirm it
+    - I would like that
+- intent: accept_cash_miles_offer
+  examples: |
+    - Yes, let's go ahead with the upgrade
+    - I agree to use cash and miles
+    - Please proceed with that
+- intent: seat_selection_request
+  examples: |
+    - Can I get a window seat?
+    - I'd like an aisle seat please
+    - Do you have window seats left?
